@@ -7,12 +7,14 @@ const About = () => {
   return (
     <motion.section
       id="about"
-      className="relative z-10 max-w-4xl mx-auto space-y-4 text-gray-300"
+      className="relative z-10 max-w-4xl mx-auto space-y-4 text-gray-300 md:py-20"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}>
-      <h2 className="text-3xl font-semibold text-white">About Me</h2>
+      <h2 className="md:text-3xl text-2xl font-semibold text-white">
+        ABOUT ME
+      </h2>
       <p>
         I'm a frontend developer with a love for design, animation, and user
         experience. My work bridges technical precision and creative flair,

@@ -9,12 +9,14 @@ const Portfolio = () => {
   return (
     <motion.section
       id="portfolio"
-      className="relative z-10 max-w-4xl mx-auto space-y-4"
+      className="relative z-10 max-w-4xl mx-auto space-y-4 md:py-20"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}>
-      <h2 className="text-3xl font-semibold text-white">Projects</h2>
+      <h2 className="md:text-3xl text-2xl font-semibold text-white">
+        PORTFOLIO
+      </h2>
       <div className="grid sm:grid-cols-2 gap-6">
         {projects.map((project, index) => (
           <div
@@ -37,7 +39,7 @@ const Portfolio = () => {
                   href={project.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 text-sm font-medium rounded-full bg-white text-black hover:bg-gray-100 transition">
+                  className="cursor-pointer px-4 py-2 text-sm font-medium rounded-full bg-white text-black hover:bg-gray-100 transition">
                   View Site
                 </a>
               )}
@@ -46,7 +48,7 @@ const Portfolio = () => {
                   href={project.codeLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 text-sm font-medium rounded-full border border-white text-white hover:bg-white hover:text-black transition">
+                  className="cursor-pointer px-4 py-2 text-sm font-medium rounded-full border border-white text-white hover:bg-white hover:text-black transition">
                   View Code
                 </a>
               )}
