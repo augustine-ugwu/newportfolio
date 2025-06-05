@@ -27,7 +27,7 @@ const ContactForm = () => {
         hour: "2-digit",
         minute: "2-digit",
       }),
-      email: "augustinehills@yahoo.com",
+      to_email: "augustinehills@yahoo.com",
       title: "Contact Form Message",
     };
 
