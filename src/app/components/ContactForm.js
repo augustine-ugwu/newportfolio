@@ -23,10 +23,6 @@ const ContactForm = () => {
       from_name: form.name,
       reply_to: form.email,
       message: form.message,
-      time: new Date().toLocaleTimeString([], {
-        hour: "2-digit",
-        minute: "2-digit",
-      }),
       to_email: "augustinehills@yahoo.com",
       title: "Contact Form Message",
     };
