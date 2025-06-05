@@ -9,7 +9,7 @@ const ContactPage = () => {
     <>
       <CustomCursor />
 
-      <main className="relative bg-black text-white font-[var(--font-geist-sans)] px-4 md:px-6 pt-24 pb-24 overflow-hidden min-h-screen">
+      <main className="relative bg-black text-white font-[var(--font-geist-sans)] px-4 md:px-6 sm:pt-24 pt-10 pb-24 overflow-hidden min-h-screen">
         {/* Background Glow Spots */}
         <div className="absolute top-10 left-[-100px] w-[300px] h-[300px] bg-purple-500 opacity-20 blur-3xl rounded-full z-0" />
         <div className="absolute bottom-10 right-[-150px] w-[400px] h-[400px] bg-blue-500 opacity-20 blur-3xl rounded-full z-0" />
@@ -18,7 +18,7 @@ const ContactPage = () => {
         <div className="absolute top-[20%] right-[-10%] w-[350px] h-[350px] bg-yellow-400 opacity-10 blur-2xl rounded-full z-0" />
 
         {/* Page Title & Description */}
-        <section className="relative z-10 max-w-4xl mx-auto text-center space-y-8">
+        <section className="relative z-10 max-w-4xl mx-auto text-center space-y-2">
           {/* Go Back Button */}
           <GoBackButton /> {/* ✅ Clean and reusable */}
           <h1 className="text-4xl md:text-5xl font-extrabold uppercase tracking-widest">
@@ -30,7 +30,7 @@ const ContactPage = () => {
           </p>
         </section>
         {/* Contact Form */}
-        <section className="relative z-10 mt-16 max-w-3xl mx-auto">
+        <section className="relative z-10 mt-6 max-w-3xl mx-auto">
           <ContactForm />
         </section>
       </main>

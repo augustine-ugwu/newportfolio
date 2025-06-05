@@ -16,9 +16,9 @@ const Footer = () => {
         </div>
 
         {/* Right Side - Social Links */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5">
+        <div className="flex flex-row items-center justify-center gap-3 sm:gap-5">
           <a
-            href="https://github.com/yourgithub"
+            href="https://github.com/augustine-ugwu"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-all duration-200">
@@ -26,7 +26,7 @@ const Footer = () => {
           </a>
           <span className="hidden sm:inline opacity-30">|</span>
           <a
-            href="https://linkedin.com/in/yourlinkedin"
+            href="https://www.linkedin.com/in/augustine-ugwu-2b9243228/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-all duration-200">
@@ -34,7 +34,7 @@ const Footer = () => {
           </a>
           <span className="hidden sm:inline opacity-30">|</span>
           <a
-            href="mailto:you@example.com"
+            href="mailto:contact@augustineugwu.com"
             className="hover:text-white transition-all duration-200">
             Email
           </a>
