@@ -34,7 +34,7 @@ const Experience = () => {
   return (
     <motion.section
       id="experience"
-      className="relative z-10 max-w-4xl mx-auto space-y-10 text-gray-300 pt-16"
+      className="relative max-w-4xl mx-auto space-y-10 text-gray-300 pt-16"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}

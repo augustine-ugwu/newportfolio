@@ -9,7 +9,7 @@ const ContactPage = () => {
     <>
       <CustomCursor />
 
-      <main className="relative bg-black text-white font-[var(--font-geist-sans)] px-6 pt-24 pb-24 overflow-hidden min-h-screen">
+      <main className="relative bg-black text-white font-[var(--font-geist-sans)] px-4 md:px-6 pt-24 pb-24 overflow-hidden min-h-screen">
         {/* Background Glow Spots */}
         <div className="absolute top-10 left-[-100px] w-[300px] h-[300px] bg-purple-500 opacity-20 blur-3xl rounded-full z-0" />
         <div className="absolute bottom-10 right-[-150px] w-[400px] h-[400px] bg-blue-500 opacity-20 blur-3xl rounded-full z-0" />

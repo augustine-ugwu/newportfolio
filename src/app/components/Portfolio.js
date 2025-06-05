@@ -9,7 +9,7 @@ const Portfolio = () => {
   return (
     <motion.section
       id="portfolio"
-      className="relative z-10 max-w-4xl mx-auto space-y-4 md:pt-20"
+      className="relative max-w-4xl mx-auto space-y-4 md:pt-20"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
@@ -27,7 +27,7 @@ const Portfolio = () => {
               alt={project.title}
               width={500}
               height={300}
-              className="rounded-xl w-full h-auto object-cover"
+              className="rounded-xl w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
             />
             <h3 className="mt-4 text-lg font-medium text-white">
               {project.title}

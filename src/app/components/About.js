@@ -25,7 +25,7 @@ const textFade = {
 
 const About = () => {
   const paragraphs = [
-    `I'm Augustine, a frontend developer who blends clean, efficient code with creative problem-solving to build sleek, responsive interfaces. I specialize in turning concepts into fast, functional websites using modern tools like React, TypeScript, and Tailwind CSS. While I map out user flows in Figma and refine visuals in Photoshop and Illustrator, my core strength lies in translating those designs into smooth, interactive web experiences. From optimizing performance to implementing animations, I bridge the gap between design and development to deliver polished, user-friendly digital products.`,
+    `I'm Augustine, a front-end developer who blends clean and efficient code with creative problem-solving to build sleek, responsive interfaces. I specialise in transforming concepts into fast, functional websites using modern tools such as React, TypeScript, and Tailwind CSS. While I map out user flows in Figma and refine visuals in Photoshop and Illustrator, my core strength lies in translating those designs into smooth, interactive web experiences. From optimizing performance to implementing animations, I bridge the gap between design and development to deliver polished, user-friendly digital products.`,
   ];
 
   return (

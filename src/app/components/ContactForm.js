@@ -20,14 +20,15 @@ const ContactForm = () => {
     const publicKey = "dYfZlwXbe1ibgn7rt";
 
     const templateParams = {
-      title: "Contact Form Message",
       from_name: form.name,
       reply_to: form.email,
+      message: form.message,
       time: new Date().toLocaleTimeString([], {
         hour: "2-digit",
         minute: "2-digit",
       }),
-      message: form.message,
+      email: "augustinehills@yahoo.com",
+      title: "Contact Form Message",
     };
 
     emailjs
@@ -46,7 +47,7 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="space-y-8 bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 shadow-xl">
+      className="space-y-8 bg-white/5 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-white/10 shadow-xl">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="name" className="block text-sm font-semibold mb-2">
