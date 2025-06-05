@@ -6,24 +6,32 @@ import {
   FaPaintBrush,
   FaMobileAlt,
   FaHandPointRight,
-} from "react-icons/fa"; // Add hand icon
+} from "react-icons/fa";
 
 const services = [
   {
     title:
-      "User-Friendly, Responsive Websites Built with Modern Frontend Technologies.",
+      "High-Performance, Responsive Websites Built with Modern Technologies — Delivered Within 7 Days.",
     price: "₦200,000 / project",
     icon: <FaCode size={28} />,
   },
   {
-    title: "Flawless UI/UX Designs That Convert and Delight",
+    title:
+      "Conversion-Focused Landing Pages for Startups, Campaigns, and Product Launches.",
     price: "₦150,000 / project",
     icon: <FaPaintBrush size={28} />,
   },
   {
-    title: "Graphic Designs That Speaks Before You Say a Word",
-    price: "₦10,000 / project",
+    title:
+      "From Figma to Functional — I Convert Design Files Into Clean, Production-Ready Code.",
+    price: "₦150,000 / project",
     icon: <FaMobileAlt size={28} />,
+  },
+  {
+    title:
+      "Refactor & Optimize Your Frontend Codebase for Better Speed, Maintainability, and UX.",
+    price: "₦100,000 / project",
+    icon: <FaCode size={28} />,
   },
 ];
 
@@ -36,7 +44,7 @@ const Services = () => {
   return (
     <motion.section
       id="services"
-      className="max-w-4xl mx-auto py-20 text-white"
+      className="max-w-4xl mx-auto md:pt-20 text-white"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
