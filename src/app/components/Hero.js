@@ -2,10 +2,13 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link as ScrollLink } from "react-scroll";
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
+import Link from "next/link";
 
-const roles = ["a Graphic Designer", "a UI/UX Designer", "a Frontend Engineer"];
+const roles = [
+  "a Frontend Developer",
+  "a UI/UX Designer",
+  "a Graphic Designer",
+];
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
@@ -52,7 +55,7 @@ const Hero = () => {
       </motion.h1>
 
       <motion.div
-        className="text-4xl flex items-center gap-2 md:pl-30"
+        className="text-4xl font-medium sm:text-5xl flex items-center gap-2 md:pl-30"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
@@ -109,56 +112,13 @@ const Hero = () => {
         <div className="hidden sm:block text-white">|</div>
 
         {/* WORK WITH ME button */}
-        <ScrollLink
-          to="contact"
-          smooth={true}
-          duration={500}
-          offset={-80}
+        <Link
+          href="/contact"
           className="cursor-pointer bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-200 transition-all duration-300">
+          {" "}
           WORK WITH ME
-        </ScrollLink>
+        </Link>
       </motion.div>
-
-      {/* <motion.div
-        className="flex gap-6 mt-8"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.4 }}>
-        {[
-          {
-            icon: <FaGithub size={24} />,
-            href: "https://github.com/yourusername",
-            label: "GitHub Profile",
-          },
-          {
-            icon: <FaLinkedin size={24} />,
-            href: "https://www.linkedin.com/in/yourusername",
-            label: "LinkedIn Profile",
-          },
-          {
-            icon: <FaTwitter size={24} />,
-            href: "https://twitter.com/yourusername",
-            label: "Twitter Profile",
-          },
-          {
-            icon: <FaEnvelope size={24} />,
-            href: "mailto:your.email@example.com",
-            label: "Email",
-          },
-        ].map(({ icon, href, label }) => (
-          <motion.a
-            key={label}
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={label}
-            className="text-gray-400 hover:text-white transition-colors"
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.95 }}>
-            {icon}
-          </motion.a>
-        ))}
-      </motion.div> */}
     </motion.section>
   );
 };

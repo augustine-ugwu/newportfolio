@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Link as ScrollLink } from "react-scroll";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,14 +43,11 @@ const Navbar = () => {
               {item.label}
             </ScrollLink>
           ))}
-          <ScrollLink
-            to="contact"
-            smooth={true}
-            duration={500}
-            offset={-80}
+          <Link
+            href="/contact"
             className="cursor-pointer border border-white px-8 py-4 rounded-full text-sm font-semibold hover:bg-white hover:text-black transition">
             WORK WITH ME
-          </ScrollLink>
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -76,15 +74,12 @@ const Navbar = () => {
               {item.label}
             </ScrollLink>
           ))}
-          <ScrollLink
-            to="contact"
-            smooth={true}
-            duration={500}
-            offset={-80}
-            onClick={toggleMenu}
+
+          <Link
+            href="/contact"
             className="block bg-white text-black px-4 py-2 rounded-full text-center font-semibold mt-2 cursor-pointer">
             Work with Me
-          </ScrollLink>
+          </Link>
         </div>
       )}
     </nav>

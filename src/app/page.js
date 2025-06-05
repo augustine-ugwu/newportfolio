@@ -8,13 +8,14 @@ import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Services from "./components/Services";
 import CustomCursor from "./components/CustomCursor";
+import Testimonial from "./components/Testimonial";
 
 export default function Home() {
   return (
     <>
       <CustomCursor />
       <Navbar />
-      <main className="relative overflow-hidden min-h-screen px-6 pt-44 pb-32 space-y-40 font-[var(--font-geist-sans)] bg-black text-white">
+      <main className="relative overflow-hidden min-h-screen px-6 pt-44 space-y-40 font-[var(--font-geist-sans)] bg-black text-white">
         {/* Blur Glow Spots */}
         <div className="absolute top-10 left-[-100px] w-[300px] h-[300px] bg-purple-500 opacity-20 blur-3xl rounded-full z-0" />
         <div className="absolute bottom-10 right-[-150px] w-[400px] h-[400px] bg-blue-500 opacity-20 blur-3xl rounded-full z-0" />
@@ -27,6 +28,7 @@ export default function Home() {
         <Services />
         <Portfolio />
         <Experience />
+        <Testimonial />
         <Footer />
       </main>
     </>
