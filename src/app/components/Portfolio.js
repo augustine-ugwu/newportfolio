@@ -9,7 +9,7 @@ const Portfolio = () => {
   return (
     <motion.section
       id="portfolio"
-      className="relative z-10 max-w-4xl mx-auto space-y-4 md:py-20"
+      className="relative z-10 max-w-4xl mx-auto space-y-4 md:pt-20"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
@@ -32,25 +32,56 @@ const Portfolio = () => {
             <h3 className="mt-4 text-lg font-medium text-white">
               {project.title}
             </h3>
-            <p className="text-sm text-gray-400 mb-4">{project.description}</p>
-            <div className="flex gap-3 flex-wrap">
+            <p className="text-sm text-gray-400 font-medium mb-4">
+              {project.description}
+            </p>
+            <div className="grid grid-cols-12 items-center gap-4">
+              {/* View Site Button (3/12 columns) */}
               {project.liveLink && (
-                <a
-                  href={project.liveLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="cursor-pointer px-4 py-2 text-sm font-medium rounded-full bg-white text-black hover:bg-gray-100 transition">
-                  View Site
-                </a>
+                <div className="col-span-12 sm:col-span-3">
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full text-center cursor-pointer px-4 py-2 text-sm font-medium rounded-full bg-white text-black hover:bg-gray-100 transition">
+                    View Site
+                  </a>
+                </div>
               )}
-              {project.codeLink && (
-                <a
-                  href={project.codeLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="cursor-pointer px-4 py-2 text-sm font-medium rounded-full border border-white text-white hover:bg-white hover:text-black transition">
-                  View Code
-                </a>
+
+              {/* Tech Stack (9/12 columns) */}
+              {project.stack && (
+                <div className="col-span-12 sm:col-span-9 flex flex-wrap gap-3">
+                  {project.stack.map((tech, i) => (
+                    <span
+                      key={i}
+                      className={`text-sm font-bold ${
+                        tech === "#React.js"
+                          ? "text-blue-400"
+                          : tech === "#Tailwind CSS"
+                          ? "text-cyan-400"
+                          : tech === "#Vite"
+                          ? "text-purple-400"
+                          : tech === "#Next.js"
+                          ? "text-indigo-400"
+                          : tech === "#Express.js"
+                          ? "text-green-400"
+                          : tech === "#Node.js"
+                          ? "text-lime-400"
+                          : tech === "#MongoDB"
+                          ? "text-emerald-400"
+                          : tech === "#MUI"
+                          ? "text-sky-400"
+                          : tech === "#TensorFlow.js"
+                          ? "text-yellow-400"
+                          : tech === "#Vue.js"
+                          ? "text-green-300"
+                          : "text-gray-400"
+                      }`}>
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               )}
             </div>
           </div>
