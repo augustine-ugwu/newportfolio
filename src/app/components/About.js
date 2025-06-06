@@ -31,7 +31,7 @@ const About = () => {
   return (
     <motion.section
       id="about"
-      className="relative z-10 max-w-6xl px-6 mx-auto text-white md:pt-20"
+      className="relative z-10 max-w-6xl md:px-6 mx-auto text-white md:pt-20"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}>
