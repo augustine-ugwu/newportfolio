@@ -4,11 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
-const roles = [
-  "a Frontend Developer",
-  "a UI/UX Designer",
-  "a Graphic Designer",
-];
+const roles = ["a Frontend Developer", "a Web Designer", "a Visual Developer"];
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
@@ -68,7 +64,7 @@ const Hero = () => {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="text-purple-400">
+          className="text-purple-600">
           ↴
         </motion.span>
       </motion.div>
