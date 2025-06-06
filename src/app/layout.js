@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Augustine Ugwu | Portfolio",
+  icons: {
+    icon: "/favicon.png",
+  },
   description:
     "A front-end developer who blends clean and efficient code with creative problem-solving to build sleek, responsive interfaces using React, TypeScript, and Tailwind CSS.",
   keywords: [
