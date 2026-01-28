@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
-const roles = ["a Frontend Developer", "a Web Designer", "a Visual Developer"];
+const roles = ["a Frontend Developer", "a Web Designer", "a Product Builder"];
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
@@ -21,12 +21,14 @@ const Hero = () => {
       className="relative z-10 max-w-4xl mx-auto space-y-2 justify-center items-center text-white px-4"
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: "easeOut" }}>
+      transition={{ duration: 1, ease: "easeOut" }}
+    >
       <motion.p
         className="uppercase text-sm tracking-widest text-gray-400"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.4 }}>
+        transition={{ delay: 0.4 }}
+      >
         DESIGNS THAT SPEAK. CODE THAT DELIVERS. EXPERIENCES THAT LAST.
       </motion.p>
 
@@ -35,7 +37,8 @@ const Hero = () => {
         style={{ fontFamily: "Gambarino" }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.6 }}>
+        transition={{ delay: 0.6 }}
+      >
         Augustine Ugwu is&nbsp;
         <AnimatePresence mode="wait">
           <motion.span
@@ -44,7 +47,8 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.6 }}
-            className="text-purple-600 inline-block role-glow">
+            className="text-purple-600 inline-block role-glow"
+          >
             {roles[index]},
           </motion.span>
         </AnimatePresence>
@@ -55,7 +59,8 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
-        style={{ fontFamily: "Gambarino" }}>
+        style={{ fontFamily: "Gambarino" }}
+      >
         based in Abuja, Nigeria.
         <motion.span
           animate={{ y: [0, -10, 0] }}
@@ -64,7 +69,8 @@ const Hero = () => {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="text-purple-600">
+          className="text-purple-600"
+        >
           ↴
         </motion.span>
       </motion.div>
@@ -73,7 +79,8 @@ const Hero = () => {
         className="flex items-center justify-between gap-6 mt-16 flex-wrap w-full max-w-xl"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}>
+        transition={{ delay: 1.2 }}
+      >
         {/* Recommended by */}
         <div className="md:flex items-center gap-4">
           <span className="text-white text-sm tracking-widest uppercase">
@@ -110,7 +117,8 @@ const Hero = () => {
         {/* WORK WITH ME button */}
         <Link
           href="/contact"
-          className="cursor-pointer bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-200 transition-all duration-300">
+          className="cursor-pointer bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-200 transition-all duration-300"
+        >
           {" "}
           WORK WITH ME
         </Link>

@@ -3,7 +3,7 @@ export const projects = [
   {
     title: "Demand Point Skills & Services",
     description:
-      "A platform built with Next.js to connect artisans with clients. It enables service bookings, profile management, and real-time communication between users.",
+      "A platform built to connect artisans with clients. It enables service bookings, profile management, and real-time communication between users.",
     image: "/images/demandpoint.png",
     liveLink: "https://www.demandpoint.app",
     stack: ["#Next.js", "#MUI", "#Express.js", "#Node.js", "#MongoDB"],
@@ -11,7 +11,7 @@ export const projects = [
   {
     title: "Ship and Shore",
     description:
-      "A modern company website built with Next.js to showcase services and provide contact options for potential clients. Includes responsive design and SEO-friendly architecture.",
+      "A modern company website built to showcase services and provide contact options for potential clients. Includes responsive design and SEO-friendly architecture.",
     image: "/images/shipandshore.png",
     liveLink: "https://www.shipandshoreng.com",
     stack: ["#Next.js", "#Tailwind CSS"],
@@ -70,7 +70,7 @@ export const projects = [
   {
     title: "Lessons App",
     description:
-      "An e-learning platform built with Vue.js that allows users to browse, sort, and add lessons to a cart. Features include category filtering and a streamlined checkout flow.",
+      "An e-learning platform that allows users to browse, sort, and add lessons to a cart. Features include category filtering and a streamlined checkout flow.",
     image: "/images/lessonsapp.png",
     liveLink: "https://lesson-app-frontend.vercel.app",
     stack: ["#Vue.js", "#Tailwind CSS", "#Express.js", "#Node.js", "#MongoDB"],

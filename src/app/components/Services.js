@@ -15,8 +15,8 @@ import { HiOutlineXMark } from "react-icons/hi2";
 const services = [
   {
     title:
-      "High-Performance, Responsive Websites Built with Modern Technologies — Delivered Within 7 Days.",
-    price: "₦200,000 / project",
+      "High-Performance, Responsive Websites Built with Modern Technologies.",
+    price: "Flexible pricing based on project scope.",
     icon: <FaCode size={28} />,
     deliverables: [
       "Mobile-first, responsive website",
@@ -30,7 +30,7 @@ const services = [
   {
     title:
       "Conversion-Focused Landing Pages for Startups, Campaigns, and Product Launches.",
-    price: "₦150,000 / project",
+    price: "Flexible pricing based on project scope.",
     icon: <FaPaintBrush size={28} />,
     deliverables: [
       "Single-page design + build",
@@ -44,7 +44,7 @@ const services = [
   {
     title:
       "From Figma to Functional: I Convert Design Files Into Clean, Production-Ready Code.",
-    price: "₦150,000 / project",
+    price: "Flexible pricing based on project scope.",
     icon: <FaMobileAlt size={28} />,
     deliverables: [
       "Pixel-perfect conversion",
@@ -58,7 +58,7 @@ const services = [
   {
     title:
       "Refactor & Optimize Your Frontend Codebase for Better Speed, Maintainability, and UX.",
-    price: "₦100,000 / project",
+    price: "Flexible pricing based on project scope.",
     icon: <FaCode size={28} />,
     deliverables: [
       "Code cleanup & restructuring",
@@ -104,7 +104,8 @@ const Services = () => {
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      viewport={{ once: true }}>
+      viewport={{ once: true }}
+    >
       {/* Section Heading */}
       <div className="mb-6 relative">
         <div className="flex items-center gap-4 text-lg tracking-widest uppercase">
@@ -129,17 +130,18 @@ const Services = () => {
             </div>
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
               <div className="text-gray-300 text-sm max-w-3xl">
-                <p className="text-white text-md font-light tracking-widest">
-                  STARTING AT
+                <p className="text-white text-md font-light tracking-widest uppercase">
+                  Open to part-time / contract roles
                 </p>
-                <p className="text-white text-lg font-medium">
+                {/* <p className="text-white text-lg font-medium">
                   {service.price}
-                </p>
+                </p> */}
               </div>
               <div className="text-right">
                 <button
                   onClick={() => setSelectedService(service)}
-                  className="rounded-full border border-white px-6 py-2 hover:bg-white hover:text-black transition text-sm font-semibold">
+                  className="rounded-full border border-white px-6 py-2 hover:bg-white hover:text-black transition text-sm font-semibold"
+                >
                   VIEW SERVICE
                 </button>
               </div>
@@ -155,18 +157,21 @@ const Services = () => {
             className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50 p-4 pt-20"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}>
+            exit={{ opacity: 0 }}
+          >
             <motion.div
               ref={modalRef}
               className="bg-[#121212] relative rounded-2xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl space-y-4"
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 50, opacity: 0 }}
-              transition={{ duration: 0.3 }}>
+              transition={{ duration: 0.3 }}
+            >
               <button
                 onClick={() => setSelectedService(null)}
                 className="absolute top-2 right-2 sm:top-4 sm:right-4 text-gray-300 hover:text-red-500 transition duration-200 p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-[#121212]"
-                aria-label="Close modal">
+                aria-label="Close modal"
+              >
                 <HiOutlineXMark className="w-6 h-6" />
               </button>
 
@@ -192,7 +197,8 @@ const Services = () => {
                   {selectedService.techStack.map((tech, i) => (
                     <li
                       key={i}
-                      className="px-2 py-1 bg-gray-800 rounded-full text-xs">
+                      className="px-2 py-1 bg-gray-800 rounded-full text-xs"
+                    >
                       {tech}
                     </li>
                   ))}

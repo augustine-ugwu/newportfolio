@@ -25,7 +25,7 @@ const textFade = {
 
 const About = () => {
   const paragraphs = [
-    `I'm Augustine, a front-end developer who blends clean and efficient code with creative problem-solving to build sleek, responsive interfaces. I specialise in transforming concepts into fast, functional websites using modern tools such as React, TypeScript, and Tailwind CSS. While I map out user flows in Figma and refine visuals in Photoshop and Illustrator, my core strength lies in translating those designs into smooth, interactive web experiences. From optimizing performance to implementing animations, I bridge the gap between design and development to deliver polished, user-friendly digital products.`,
+    `I'm Augustine, a frontend developer and product builder who helps startups and businesses turn ideas into fast, usable products. I build clean, responsive interfaces with React, TypeScript, and Tailwind CSS, focusing on performance, clarity, and real user needs. I’m comfortable taking a product from Figma to production, translating designs into smooth, interactive experiences without friction. Whether it’s shipping new features, refining UX, or improving load speed, I focus on delivering work that moves the product forward.`,
   ];
 
   return (
@@ -34,13 +34,15 @@ const About = () => {
       className="relative z-10 max-w-6xl md:px-6 mx-auto text-white md:pt-20"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}>
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <motion.h2
         className="text-white text-2xl md:text-4xl font-medium tracking-tight mb-10 relative inline-block after:content-[''] after:block after:h-1 after:w-16 after:mt-3 after:bg-purple-500 text-center md:text-left"
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        style={{ fontFamily: "Gambarino" }}>
+        style={{ fontFamily: "Gambarino" }}
+      >
         Meet Augustine
       </motion.h2>
 
@@ -50,9 +52,10 @@ const About = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="shrink-0">
+          className="shrink-0"
+        >
           <img
-            src="/images/profile_img.jpg"
+            src="/images/profile_image.jpeg"
             alt="Augustine Ugwu"
             className="w-40 h-40 md:w-56 md:h-56 object-cover rounded-full shadow-lg"
           />
@@ -65,7 +68,8 @@ const About = () => {
               key={i}
               className="leading-relaxed text-lg md:text-xl text-white"
               custom={i}
-              variants={textFade}>
+              variants={textFade}
+            >
               {text}
             </motion.p>
           ))}
@@ -77,7 +81,8 @@ const About = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-purple-400 transition"
-              aria-label="LinkedInIcon">
+              aria-label="LinkedInIcon"
+            >
               <LinkedinIcon size={24} />
             </a>
             <a
@@ -85,7 +90,8 @@ const About = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-purple-400 transition"
-              aria-label="GitHubIcon">
+              aria-label="GitHubIcon"
+            >
               <GithubIcon size={24} />
             </a>
             <a
@@ -93,7 +99,8 @@ const About = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-purple-400 transition"
-              aria-label="TwitterIcon">
+              aria-label="TwitterIcon"
+            >
               <TwitterIcon size={24} />
             </a>
             <a
@@ -101,7 +108,8 @@ const About = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-purple-400 transition"
-              aria-label="InstagramIcon">
+              aria-label="InstagramIcon"
+            >
               <InstagramIcon size={24} />
             </a>
           </div>

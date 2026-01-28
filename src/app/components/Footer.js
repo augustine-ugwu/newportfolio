@@ -11,7 +11,7 @@ const Footer = () => {
             All rights reserved.
           </p>
           <p className="text-xs text-gray-500 mt-1 italic">
-            Built with passion, precision, ☕ and clean code.
+            Building digital products with clarity and purpose.
           </p>
         </div>
 
@@ -21,7 +21,8 @@ const Footer = () => {
             href="https://github.com/augustine-ugwu"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white transition-all duration-200">
+            className="hover:text-white transition-all duration-200"
+          >
             GitHub
           </a>
           <span className="hidden sm:inline opacity-30">|</span>
@@ -29,13 +30,15 @@ const Footer = () => {
             href="https://www.linkedin.com/in/augustine-ugwu-2b9243228/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white transition-all duration-200">
+            className="hover:text-white transition-all duration-200"
+          >
             LinkedIn
           </a>
           <span className="hidden sm:inline opacity-30">|</span>
           <a
             href="mailto:contact@augustineugwu.com"
-            className="hover:text-white transition-all duration-200">
+            className="hover:text-white transition-all duration-200"
+          >
             Email
           </a>
         </div>
