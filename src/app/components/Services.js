@@ -38,7 +38,7 @@ const services = [
       "A/B testing setup",
       "Copywriting support",
     ],
-    techStack: ["React", "Tailwind CSS", "Vite", "Netlify"],
+    techStack: ["React", "Tailwind CSS", "Vite", "Vercel"],
     timeline: "3-5 days",
   },
   {
@@ -204,10 +204,10 @@ const Services = () => {
                   ))}
                 </ul>
 
-                <p className="text-sm text-white pt-2">
+                {/* <p className="text-sm text-white pt-2">
                   <span className="font-medium">Timeline:</span>{" "}
                   {selectedService.timeline}
-                </p>
+                </p> */}
 
                 <div className="pt-4">
                   <Link href="/contact">

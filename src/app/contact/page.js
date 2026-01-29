@@ -25,8 +25,8 @@ const ContactPage = () => {
             Get in Touch
           </h1>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
-            Have a project in mind or just want to say hello? Fill out the form
-            below and I’ll get back to you as soon as possible.
+            Have a project in mind or just want to say hello? <br></br>Fill out
+            the form below and I’ll get back to you as soon as possible.
           </p>
         </section>
         {/* Contact Form */}
